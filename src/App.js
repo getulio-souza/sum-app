@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { Hello } from './new-files/Hello';
+import { World } from './new-files/World';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='container'>
+    <h1>soma de valores</h1>
+    <small style={{paddingBottom: "10px"}}>Se algum valor retornar negativo, deve ser apresentado zero (0)</small>
+    <Hello/>
+    <World/>
+   </div>
   );
 }
 
